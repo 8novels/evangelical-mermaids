@@ -8,7 +8,7 @@
 [カクヨムにも掲載しています。](https://kakuyomu.jp/works/1177354054882672650)
 
 ## 目次
-* [会員番号1番 国道476号](./chapter-1/episode-01)
+* [会員番号1番 国道476号](./raw/chapter-1/episode-01)
 * [会員番号2番 甲楽城断層](./chapter-1/episode-02)
 * [会員番号3番 水ようかん](./chapter-1/episode-03)
 * [会員番号4番 お水送り](./chapter-1/episode-04)
