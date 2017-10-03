@@ -15,8 +15,11 @@
   </head>
 
   <body>
-
-    {% include header.html %}
+    <header class="site-header" role="banner">
+      <div class="wrapper">
+        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      </div>
+    </header>
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -24,7 +27,8 @@
       </div>
     </main>
 
-    {% include footer.html %}
+    <footer class="site-footer">
+    </footer>
 
   </body>
 
