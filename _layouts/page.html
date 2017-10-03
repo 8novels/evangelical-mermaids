@@ -11,4 +11,17 @@ layout: default
     {{ content }}
   </div>
 
+  <footer>
+  {% if page.previous %}
+    <p class="pager__item--prev">
+      <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }} &gt;</a>
+    </p>
+  {% endif %}
+  {% if page.next %}
+    <p class="pager__item--next">
+      <a href="{{ page.next.url | relative_url }}">&lt; {{ page.next.title }}</a>
+    </p>
+  {% endif %}
+  </footer>
+    
 </article>
