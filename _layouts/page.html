@@ -1,10 +1,18 @@
 ---
 layout: default
 ---
-<ol class="breadcrumb">
-  <li class="breadcrumb-item"><a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></li>
-  <li class="breadcrumb-item active">{{ page.title | escape }}</li>
-</ol>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      </li>
+      <li class="nav-item active">
+        {{ page.title | escape }}
+      </li>
+    </ul>
+  </div>
+</nav>
 
 <div class="container">
   <article>
