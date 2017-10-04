@@ -2,10 +2,12 @@
 layout: default
 ---
 <ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="#">Home</a></li>
-  <li class="breadcrumb-item active">Library</li>
+  <li class="breadcrumb-item"><a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></li>
+  <li class="breadcrumb-item active">{{ page.title | escape }}</li>
 </ol>
 
-        <article>
-          {{ content }}
-        </article>
+<div class="container">
+  <article>
+    {{ content }}
+  </article>
+</div
