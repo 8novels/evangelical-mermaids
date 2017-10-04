@@ -7,3 +7,10 @@ catchphrase: >
   プロデューサーさん、私でも、アイドル活動出来ますか……？
 twitter_username: 8amjp
 github_username:  8amjp
+
+minima:
+  date_format: "%b %-d, %Y"
+
+# Build settings
+markdown: kramdown
+theme: minima
