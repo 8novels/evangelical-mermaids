@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
-        <div class="home">
+    <header>
+      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    </header>
+
+
+        <div>
           {{ content }}
         </div>
