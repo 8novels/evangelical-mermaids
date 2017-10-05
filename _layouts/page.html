@@ -7,6 +7,7 @@ layout: default
     {% assign prev_index = forloop.index0 | minus: 1 %}
     {% if items[prev_index].title %}
       {{ assign prev = items[prev_index] }}
+      <p class="card-text"><a href="{{ prev.url | relative_url }}">{{ prev.title }}</a></p>
     {% endif %}
     {% assign next_index = forloop.index0 | plus: 1 %}
     {% if items[next_index].title %}
