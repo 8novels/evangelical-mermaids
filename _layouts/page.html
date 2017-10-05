@@ -16,7 +16,15 @@ layout: default
 {% assign items = site.pages %}
 {% for item in items %}
   {% if item.path == page.path %}
-    {{ forloop.index0 }}|{{ item.title }}|{{ item.path }}<hr>
+    {% assign prev_index = forloop.index0 | minus: 1 %}
+    {% assign next_index = forloop.index0 | plus: 1 %}
+    {% if items[prev_index].title %}
+      {{ items[prev_index].title }}|{{ items[prev_index].path }}<hr>
+    {% endif %}
+    {% if items[next_index].title %}
+      {{ items[next_index].title }}|{{ items[next_index].path }}<hr>
+    {% endif %}
+    {% break %}
   {% endif %}
 {% endfor %}
     
