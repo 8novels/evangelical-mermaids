@@ -6,12 +6,11 @@ layout: default
   {% if item.path == page.path %}
     {% assign prev_index = forloop.index0 | minus: 1 %}
     {% if items[prev_index].title %}
-      {{ assign prev = items[prev_index] }}
-      <p class="card-text"><a href="{{ prev.url | relative_url }}">{{ prev.title }}</a></p>
+      {% assign prev = items[prev_index] %}
     {% endif %}
     {% assign next_index = forloop.index0 | plus: 1 %}
     {% if items[next_index].title %}
-      {{ assign next = items[next_index] }}
+      {% assign next = items[next_index] %}
     {% endif %}
     {% break %}
   {% endif %}
