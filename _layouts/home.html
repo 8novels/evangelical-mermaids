@@ -2,13 +2,7 @@
 layout: default
 ---
 <nav class="navbar navbar-light bg-light">
-  <div class="collapse navbar-collapse" id="navbar">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-      </li>
-    </ul>
-  </div>
+  <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 </nav>
 
 <div class="container">
