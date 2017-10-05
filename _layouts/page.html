@@ -13,12 +13,11 @@ layout: default
     </span>
   </div>
 </nav>
-
-{{ page.path }}
-<hr>
 {% assign items = site.pages %}
 {% for item in items %}
-  {{ forloop.index0 }}|{{ item.title }}|{{ item.path }}|{{ forloop.title }}|{{ forloop.path }}<hr>
+  {% if item.path == page.path %}
+    {{ forloop.index0 }}|{{ item.title }}|{{ item.path }}<hr>
+  {% endif %}
 {% endfor %}
     
 <div class="container">
