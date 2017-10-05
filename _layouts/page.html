@@ -14,11 +14,17 @@ layout: default
   </div>
 </nav>
 
-    {% assign next_i = site.pages.index0 | plus: 1 %}
-    {% assign prev_i = site.pages.index0 | minus: 1 %}
-    {{ site.pages[next_i].title }}
+{% for item in site.pages %}
+  {% if item.path == page.path %}
+    {% assign n = forloop.index0 | plus: 1 %}
+    {% assign p = forloop.index0 | minus: 1 %}
+    {% assign next = forloop[n] %}
+    {% assign prev = forloop[p] %}
+    {{ prev.title }}
     <br>
-    {{ site.pages[prev_i].title }}
+    {{ next.title }}
+  {% endif %}
+{% endfor %}
     
 <div class="container">
   <article>
