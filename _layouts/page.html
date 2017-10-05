@@ -14,7 +14,22 @@ layout: default
   </div>
 </nav>
 
-{{ site | debug }}
+
+{{ site.pages }}
+{{ site.posts }}
+{{ site.related_posts }}
+{{ site.static_files }}
+{{ site.html_pages }}
+{{ site.html_files }}
+{{ site.collections }}
+{{ site.documents }}
+
+{{ page.id }}
+{{ page.categories }}
+{{ page.tags }}
+{{ page.path }}
+{{ page.next }}
+{{ page.previous }}
 
 <div class="container">
   <article>
