@@ -18,4 +18,11 @@ layout: default
   <article>
     {{ content }}
   </article>
-</div
+</div>
+
+{% for item in site.pages %}
+    {% assign next_i = forloop.index0 | plus: 1 %}
+    {% assign prev_i = forloop.index0 | minus: 1 %}
+    {{ site.pages[next_i] }}
+    {{ site.pages[prev_i] }}
+{% endfor %}
