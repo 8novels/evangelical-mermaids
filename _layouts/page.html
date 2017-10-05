@@ -6,11 +6,11 @@ layout: default
   {% if item.path == page.path %}
     {% assign prev_index = forloop.index0 | minus: 1 %}
     {% if items[prev_index].title %}
-      {% assign prev = items[prev_index] %}
+      {% assign page.prev = items[prev_index] %}
     {% endif %}
     {% assign next_index = forloop.index0 | plus: 1 %}
     {% if items[next_index].title %}
-      {% assign next = items[next_index] %}
+      {% assign page.next = items[next_index] %}
     {% endif %}
     {% break %}
   {% endif %}
@@ -27,24 +27,22 @@ layout: default
     </span>
   </div>
 </nav>
-<div class="container">
-  {% if prev %}
-  <div class="card bg-light">
-    <div class="card-body">
-      <p class="card-text"><a href="{{ prev.url | relative_url }}">{{ prev.title }}</a></p>
-    </div>
+{% if page.prev %}
+<div class="card bg-light">
+  <div class="card-body">
+    <p class="card-text"><a href="{{ page.prev.url | relative_url }}">{{ page.prev.title }}</a></p>
   </div>
-  {% endif %}
-
+</div>
+{% endif %}
+<div class="container">
   <article>
     {{ content }}
   </article>
-
-  {% if next %}
-  <div class="card bg-light">
-    <div class="card-body">
-      <p class="card-text"><a href="{{ next.url | relative_url }}">{{ next.title }}</a></p>
-    </div>
-  </div>
-  {% endif %}
 </div>
+{% if page.next %}
+<div class="card bg-light">
+  <div class="card-body">
+    <p class="card-text"><a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a></p>
+  </div>
+</div>
+{% endif %}
