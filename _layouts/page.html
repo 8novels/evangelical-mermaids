@@ -15,15 +15,10 @@ layout: default
 </nav>
 
 {% for item in site.pages %}
-  {% if item.path == page.path %}
-    {% assign n = forloop.index0 | plus: 1 %}
-    {% assign p = forloop.index0 | minus: 1 %}
-    {% assign next = forloop[n] %}
-    {% assign prev = forloop[p] %}
-    {{ prev.title }}
-    <br>
-    {{ next.title }}
-  {% endif %}
+  {% assign next_i = forloop.index0 | plus: 1 %}
+  {% assign prev_i = forloop.index0 | minus: 1 %}
+  {{ items[next_i].title }}/
+  {{ items[prev_i].title }}<hr>
 {% endfor %}
     
 <div class="container">
