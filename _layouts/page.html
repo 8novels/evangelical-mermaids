@@ -17,8 +17,8 @@ layout: default
 {% for item in site.pages %}
   {% assign next_i = forloop.index0 | plus: 1 %}
   {% assign prev_i = forloop.index0 | minus: 1 %}
-  {{ items[next_i].title }}/
-  {{ items[prev_i].title }}<hr>
+  {{ forloop[next_i].title }}/
+  {{ forloop[prev_i].title }}<hr>
 {% endfor %}
     
 <div class="container">
