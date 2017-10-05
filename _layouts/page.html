@@ -23,9 +23,25 @@ layout: default
 </div>
 {% endif %}
 <div class="container">
-  <article>
-    {{ content }}
-  </article>
+  <div class="row">
+    <article class="col-sm-12 col-md-11">
+      {{ content }}
+    </article>
+    <aside class="col-sm-12 col-md-1">
+      <header>
+        <h1 class="h6"><a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+        <p class="lead"><small>作者</small>{{ site.author | escape }}</p>
+      </header>
+      <h2 class="h6">目次</h1>
+      <ul class="list-unstyled">
+      {% for item in items %}
+        {% if item.title %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </aside>
+  </div>
 </div>
 {% if next %}
 <div class="card bg-light">
