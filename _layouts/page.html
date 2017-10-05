@@ -6,11 +6,11 @@ layout: default
   {% if item.path == page.path %}
     {% assign prev_index = forloop.index0 | minus: 1 %}
     {% if items[prev_index].title %}
-      {{ assign page.prev = items[prev_index] }}<hr>
+      {{ assign prev = items[prev_index] }}
     {% endif %}
     {% assign next_index = forloop.index0 | plus: 1 %}
     {% if items[next_index].title %}
-      {{ assign page.next = items[next_index] }}<hr>
+      {{ assign next = items[next_index] }}
     {% endif %}
     {% break %}
   {% endif %}
@@ -28,10 +28,10 @@ layout: default
   </div>
 </nav>
 <div class="container">
-  {% if page.prev %}
+  {% if prev %}
   <div class="card bg-light">
     <div class="card-body">
-      <p class="card-text"><a href="{{ page.prev.url | relative_url }}">{{ page.prev.title }}</a></p>
+      <p class="card-text"><a href="{{ prev.url | relative_url }}">{{ prev.title }}</a></p>
     </div>
   </div>
   {% endif %}
@@ -40,10 +40,10 @@ layout: default
     {{ content }}
   </article>
 
-  {% if page.next %}
+  {% if next %}
   <div class="card bg-light">
     <div class="card-body">
-      <p class="card-text"><a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a></p>
+      <p class="card-text"><a href="{{ next.url | relative_url }}">{{ next.title }}</a></p>
     </div>
   </div>
   {% endif %}
