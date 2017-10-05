@@ -1,6 +1,20 @@
 ---
 layout: default
 ---
+{% assign items = site.pages %}
+{% for item in items %}
+  {% if item.path == page.path %}
+    {% assign prev_index = forloop.index0 | minus: 1 %}
+    {% if items[prev_index].title %}
+      {{ assign page.prev = items[prev_index] }}<hr>
+    {% endif %}
+    {% assign next_index = forloop.index0 | plus: 1 %}
+    {% if items[next_index].title %}
+      {{ assign page.next = items[next_index] }}<hr>
+    {% endif %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav mr-auto">
@@ -13,24 +27,24 @@ layout: default
     </span>
   </div>
 </nav>
-{% assign items = site.pages %}
-{% for item in items %}
-  {% if item.path == page.path %}
-    {% assign prev_index = forloop.index0 | minus: 1 %}
-    {% assign next_index = forloop.index0 | plus: 1 %}
-    {% if items[prev_index].title %}
-      {{ items[prev_index].title }}|{{ items[prev_index].path }}<hr>
-    {% endif %}
-    {% if items[next_index].title %}
-      {{ items[next_index].title }}|{{ items[next_index].path }}<hr>
-    {% endif %}
-    {% break %}
-  {% endif %}
-{% endfor %}
-    
 <div class="container">
+  {% if page.prev %}
+  <div class="card bg-light">
+    <div class="card-body">
+      <p class="card-text"><a href="{{ page.prev.url | relative_url }}">{{ page.prev.title }}</a></p>
+    </div>
+  </div>
+  {% endif %}
+
   <article>
     {{ content }}
   </article>
-</div>
 
+  {% if page.next %}
+  <div class="card bg-light">
+    <div class="card-body">
+      <p class="card-text"><a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a></p>
+    </div>
+  </div>
+  {% endif %}
+</div>
