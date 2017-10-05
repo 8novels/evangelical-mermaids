@@ -18,9 +18,9 @@ layout: default
 <hr>
 {% assign items = site.pages %}
 {% for item in items %}
-  {% assign prev_i = forloop.index0 | minus: 1 %}
-  {% assign next_i = forloop.index0 | plus: 1 %}
-  {{ forloop[prev_i].title }}/{{ forloop[prev_i].path }}//{{ forloop[next_i].title }}/{{ forloop[next_i].path }}<hr>
+  {% assign prev_i = items.index0 | minus: 1 %}
+  {% assign next_i = items.index0 | plus: 1 %}
+  {{ items[prev_i].title }}/{{ items[prev_i].path }}//{{ items[next_i].title }}/{{ items[next_i].path }}<hr>
 {% endfor %}
     
 <div class="container">
