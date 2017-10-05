@@ -14,13 +14,15 @@ layout: default
   </div>
 </nav>
 
+    {% assign next_i = site.pages.index0 | plus: 1 %}
+    {% assign prev_i = site.pages.index0 | minus: 1 %}
+    {{ site.pages[next_i].title }}
+    <br>
+    {{ site.pages[prev_i].title }}
+    
 <div class="container">
   <article>
     {{ content }}
   </article>
 </div>
 
-    {% assign next_i = site.pages.index0 | plus: 1 %}
-    {% assign prev_i = site.pages.index0 | minus: 1 %}
-    {{ site.pages[next_i] }}
-    {{ site.pages[prev_i] }}
