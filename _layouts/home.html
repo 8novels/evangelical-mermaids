@@ -41,7 +41,7 @@
   <section class="readme">
   {{ content }}
   </section>
-  <hr>
+  {% if site.index == 'auto' %}
   <section class="row">
     <div class="col-sm-12 col-md-3">
       <h2 class="h3">目次</h2>
@@ -56,6 +56,7 @@
       {% endfor %}
       </ul>
   </section>
+  {% endif %}
   <hr>
   <footer class="row">
     <div class="col-sm-12 col-md-9">
