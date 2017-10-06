@@ -14,8 +14,11 @@ article p {
 .readme h1 {
   font-size: large;
 }
-.readme h2
-.readme h3 {
+.readme h2,
+.readme h3,
+.readme h4,
+.readme h5,
+.readme h6 {
   font-size: medium;
 }
 .readme p {
