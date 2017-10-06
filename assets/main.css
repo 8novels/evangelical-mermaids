@@ -7,3 +7,17 @@ article h1 {
 }
 article p {
 }
+
+.readme {
+  padding: 2em;
+}
+.readme h1 {
+  font-size: large;
+}
+.readme h2
+.readme h3 {
+  font-size: medium;
+}
+.readme p {
+}
+

@@ -18,26 +18,29 @@
 </nav>
 
 <div class="container">
-  <section>
+  <section class="readme">
   {{ content }}
   </section>
   <hr>
-  <section>
-    <h2 class="h3">目次</h2>
-    <ul class="list-unstyled">
-    {% assign items = site.pages %}
-    {% for item in items %}
-      {% if item.title %}
-        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-    </ul>
+  <section class="row">
+    <div class="col-sm-12 col-md-2">
+      <h2 class="h3">目次</h2>
+    </div>
+    <div class="col-sm-12 col-md-10">
+      <ul class="list-unstyled">
+      {% assign items = site.pages %}
+      {% for item in items %}
+        {% if item.title %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
   </section>
   <hr>
   <footer class="row">
     <div class="col-sm-12 col-md-4">
       <p>{{ site.author | escape }}</p>
-      <ul class="social-media-list">
+      <ul class="list-unstyled">
         {% if site.github_username %}<li>{% include icon-github.html username=site.github_username %}</li>{% endif %}
         {% if site.twitter_username %}<li>{% include icon-twitter.html username=site.twitter_username %}</li>{% endif %}
       </ul>
