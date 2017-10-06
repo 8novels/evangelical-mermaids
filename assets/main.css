@@ -3,7 +3,7 @@ article {
 article h1 {
   font-size: medium;
   text-align: center;
-  padding: 3em 0;
+  margin: 16px 0 8px;
 }
 article p {
 }
@@ -12,7 +12,8 @@ article p {
   padding: 1em;
 }
 .readme h1 {
-  font-size: x-large;
+  font-size: xx-large;
+  margin: 16px 0 8px;
 }
 .readme h2,
 .readme h3,
