@@ -9,12 +9,12 @@
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:title" content="{{ page.title | escape }} | {{ site.title | escape }}" />
 <meta property="og:description" content="{{ site.description | escape | strip }}" />
-<meta property="og:type" content="novel" />
-<meta property="og:image" content="https://8amjp.github.io/site-icon.png" />
-<meta name="twitter:card" content="summary" />
+<meta property="og:type" content="{{ site.type }}" />
+<meta property="og:image" content="{{ site.image }}" />
+<meta name="twitter:card" content="{{ site.card }}" />
 <meta name="twitter:site" content="@{{ site.twitter_username }}" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+<link rel="stylesheet" href="https://8amjp.github.io/css/page.css">
 {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
 {% endif %}
