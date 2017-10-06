@@ -3,7 +3,7 @@ article {
 article h1 {
   font-size: medium;
   text-align: center;
-  margin: 3em;
+  margin: 3em 0 2em;
 }
 article p {
 }
