@@ -54,7 +54,7 @@
 {% if prev %}
 <div class="card text-center bg-light">
   <div class="card-body">
-    <p class="card-text"><span class="oi oi-chevron-top"></span><a href="{{ prev.url | relative_url }}">{{ prev.title }}</a></p>
+    <p class="card-text"><a href="{{ prev.url | relative_url }}">&lt; {{ prev.title }}</a></p>
   </div>
 </div>
 {% endif %}
@@ -66,7 +66,7 @@
 {% if next %}
 <div class="card text-center bg-light">
   <div class="card-body">
-    <p class="card-text"><span class="oi oi-chevron-bottom"></span><a href="{{ next.url | relative_url }}">{{ next.title }}</a></p>
+    <p class="card-text"><a href="{{ next.url | relative_url }}">{{ next.title }} &gt;</a></p>
   </div>
 </div>
 {% endif %}
