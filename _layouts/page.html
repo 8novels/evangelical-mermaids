@@ -28,18 +28,34 @@
 {% endif %}
 </head>
 <body>
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
   <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-  <span class="navbar-text">
-    {{ page.title | escape }}
-  </span>
-</nav>
-{% if prev %}
-<div class="card bg-light">
-  <div class="card-body">
-    <p class="card-text"><a href="{{ prev.url | relative_url }}">{{ prev.title }}</a></p>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav" aria-controls="topnav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="topnav">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          目次
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+      {% assign items = site.pages %}
+      {% for item in items %}
+        {% if item.title %}
+          <a class="dropdown-item" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% endif %}
+      {% endfor %}
+        </div>
+      </li>
+    </ul>
   </div>
-</div>
+</nav>
+
+{% if prev %}
+<header>
+  <p class="text-left"><span class="oi oi-chevron-top"></span><a href="{{ prev.url | relative_url }}">{{ prev.title }}</a></p>
+</header>
 {% endif %}
 <div class="container">
   <article>
@@ -47,11 +63,9 @@
   </article>
 </div>
 {% if next %}
-<div class="card bg-light">
-  <div class="card-body">
-    <p class="card-text"><a href="{{ next.url | relative_url }}">{{ next.title }}</a></p>
-  </div>
-</div>
+<footer>
+  <p class="text-right"><span class="oi oi-chevron-bottom"></span><a href="{{ next.url | relative_url }}">{{ next.title }}</a></p>
+</footer>
 {% endif %}
 </body>
 </html>
