@@ -1,18 +1,18 @@
 article {
 }
 article h1 {
+  font-size: medium;
   text-align: center;
-  font-size: 100%;
   padding: 3em 0;
 }
 article p {
 }
 
 .readme {
-  padding: 2em;
+  padding: 1em;
 }
 .readme h1 {
-  font-size: large;
+  font-size: x-large;
 }
 .readme h2,
 .readme h3,
