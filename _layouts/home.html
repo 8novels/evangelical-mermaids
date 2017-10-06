@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>{{ site.title | escape }}</title>
-<meta name="description" content="{{ site.description | escape }}">
+<meta name="description" content="{{ site.description | escape | strip }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta property="og:url" content="{{ "/" | absolute_url }}" />
@@ -68,7 +68,7 @@
         <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       </div>
       <div>
-        <div class="fb-like" data-href=""{{ item.url | relative_url }}"" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+        <div class="fb-like" data-href=""{{ site.url | absolute_url }}"" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
       </div>
     </div>
   </footer>
