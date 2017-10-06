@@ -3,7 +3,7 @@ article {
 article h1 {
   font-size: medium;
   text-align: center;
-  margin: 16px 0 8px;
+  margin: 3em;
 }
 article p {
 }
@@ -13,7 +13,7 @@ article p {
 }
 .readme h1 {
   font-size: xx-large;
-  margin: 16px 0 8px;
+  margin: 3em 0 2em;
 }
 .readme h2,
 .readme h3,
