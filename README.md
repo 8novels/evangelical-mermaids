@@ -2,7 +2,7 @@
 =======================================
 
 これは[足羽川永都](https://github.com/8amjp)が中心となって執筆したWeb小説です。
-[GitHub Pages](https://8amjp.github.io/evangelical-mermaids/)でお読みください。
+[GitHub Pages](https://8novels.github.io/evangelical-mermaids/)でお読みください。
 
 下記の小説投稿サイトでも公開しています。
 
