@@ -1,14 +1,15 @@
-title: 福音のマーメイド 〜福井ロコドル活動記〜
+title: ディスクリプティブ・ガール
 author: 足羽川永都
 description: >
-  福井のご当地アイドル「福音のマーメイド」のメンバーがインタビューに答えます。
-  全員人間じゃないけど。
-image: https://8amjp.github.io/site-icon.png
+  平和で退屈な日常に突如舞い込んだ謎。
+  ソースコードに隠された謎に立ち向かうのは、T高校新聞部・茨目奈乃（いばらめなの）と情報処理部の二人。
+image: site-icon.png
 type: novel
 card: summary
-index: auto
+index: manual
 twitter_username: 8amjp
 github_username:  8amjp
+github_orgname:   8novels
 google_analytics: UA-41627578-3
 
 # Build settings
