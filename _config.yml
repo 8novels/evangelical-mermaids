@@ -1,17 +1,19 @@
 title: 福音のマーメイド 〜福井ロコドル活動記〜
-author: 足羽川永都
 description: >
-  福井のご当地アイドル「福音のマーメイド」のメンバーがインタビューに答えます。
-  全員人間じゃないけど。
+  福井のご当地アイドル「福音のマーメイド」のメンバーがインタビューに答えます。全員人間じゃないけど。
+index: manual
+
+author: 8amjp
 image: site-icon.png
 type: novel
 card: summary
-index: manual
-twitter_username: 8amjp
-github_username:  8amjp
-github_orgname:   8novels
 google_analytics: UA-41627578-3
+twitter:
+  username: 8amjp
 
 # Build settings
 markdown: kramdown
 theme: minima
+
+plugins:
+  - jekyll-seo-tag
