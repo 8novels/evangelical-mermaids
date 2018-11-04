@@ -4,19 +4,22 @@
   "description": "福音のマーメイド 〜福井ロコドル活動記〜",
   "config": {
     "epub_title": "福音のマーメイド 〜福井ロコドル活動記〜",
+    "epub_title_file_as": "ふくいんのまーめいどふくいろこどるかつどうき",
     "epub_author": "足羽川永都",
+    "epub_author_file_as": "あすわがわえいと",
     "epub_publisher": "8novels",
-    "epub_lang": "ja",
-    "epub_tocTitle": "目次",
-    "epub_appendChapterTitles": false
+    "epub_publisher_file_as": "えいとのべるず"
   },
   "scripts": {
     "novel-build": "novel-build",
-    "novel-build-epub": "novel-build-epub",
     "novel-build-narou": "novel-build-narou",
     "novel-build-note": "novel-build-note",
-    "novel-build-novelabo": "./bin/novel-build-novelabo.js",
-    "novel-proofread": "./bin/novel-proofread.js"
+    "novel-build-novelabo": "novel-build-novelabo",
+    "novel-proofread": "novel-proofread",
+    "novel-publish": "novel-publish",
+    "novel-publish-horizontal": "novel-publish-horizontal",
+    "novel-publish-vertical": "novel-publish-vertical",
+    "novel-report": "novel-report"
   },
   "repository": {
     "type": "git",
@@ -29,6 +32,6 @@
   },
   "homepage": "https://github.com/8novels/evangelical-mermaids#readme",
   "dependencies": {
-    "novel-builder": "^0.1.2"
+    "novel-builder": "latest"
   }
 }
