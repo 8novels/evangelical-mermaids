@@ -12,7 +12,9 @@
 これはGitHub上で執筆しているWeb小説です。  
 [GitHub Pages](https://8novels.github.io/evangelical-mermaids/)の他、下記の小説投稿サイトでも公開しています。
 
+* [note](https://note.mu/8am/m/mbe70bdc20bd5)
 * [ノベラボ](https://www.novelabo.com/books/4869/chapters)
+* [カクヨム](https://kakuyomu.jp/works/1177354054882672650)
 
 ## Description
 
