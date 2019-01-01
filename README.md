@@ -13,8 +13,6 @@
 [GitHub Pages](https://8novels.github.io/evangelical-mermaids/)の他、下記の小説投稿サイトでも公開しています。
 
 * [note](https://note.mu/8am/m/mbe70bdc20bd5)
-* [ノベラボ](https://www.novelabo.com/books/4869/chapters)
-* [カクヨム](https://kakuyomu.jp/works/1177354054882672650)
 
 ## Description
 
@@ -22,6 +20,8 @@
 全員人間じゃないけど。
 
 ## 目次
+
+### 第1期
 
 * [会員番号１番 国道４７６号](./episodes/001.md)
 * [会員番号２番 甲楽城断層](./episodes/002.md)
@@ -33,3 +33,5 @@
 * [会員番号８番 杉津駅跡](./episodes/008.md)
 * [会員番号９番 九十九橋](./episodes/009.md)
 * [会員番号１０番 言奈地蔵](./episodes/010.md)
+
+### 第2期
