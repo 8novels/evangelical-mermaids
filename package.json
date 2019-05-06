@@ -32,6 +32,6 @@
   },
   "homepage": "https://github.com/8novels/evangelical-mermaids#readme",
   "dependencies": {
-    "novel-builder": "latest"
+    "novel-builder": "github:8amjp/novel-builder"
   }
 }
