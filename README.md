@@ -13,6 +13,7 @@
 [GitHub Pages](https://8novels.github.io/evangelical-mermaids/)の他、下記の小説投稿サイトでも公開しています。
 
 * [note](https://note.mu/8am/m/mbe70bdc20bd5)
+* [Writone](https://www.writone.jp/books/gfX5AcmSrqzjSIb8u3Pe?mode=listener)
 
 ## Description
 
